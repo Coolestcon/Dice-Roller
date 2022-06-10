@@ -2,5 +2,8 @@
 <h1>Dice-Roller</h1>
 <hr>
 <p>This is a simple DnD Dice rolling program. Just input any dice roll (such as 2d20+3) and press enter.</p>
+<br>
+<p>Accepted operators are <code>+, -, *, /</code></p>
+<br><br>
 
-  <p>Accepted operators are <code>+, -, *, /</code></p>
+<p>This Program was made for the DressCode Summer 2022 Competition.</p>
