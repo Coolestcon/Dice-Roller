@@ -20,7 +20,7 @@ def remove():
         if num_op_num[i] == "+" or num_op_num[i] == "-" or num_op_num[i] == "/" or num_op_num[i] == "*":
             op = num_op_num[i]
 
-    # help
+    # don't even ask.
     num_0 = num_op_num.replace("+", "!")
     num_1 = num_0.replace("-", "!")
     num_2 = num_1.replace("*", "!")
@@ -30,7 +30,7 @@ def remove():
     op_num = sides_and_op_num[1]
 
 
-#ASCII art from https://onlineasciitools.com
+# ASCII art from https://onlineasciitools.com
 print("--------------------------------------------------------------")
 print("DDDDD   IIIII  CCCCC  EEEEEEE  RRRRRR   OOOOO  LL      LL      EEEEEEE RRRRRR")
 print("DD  DD   III  CC    C EE       RR   RR OO   OO LL      LL      EE      RR   RR")
