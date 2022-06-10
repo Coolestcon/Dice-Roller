@@ -1,6 +1,7 @@
 import random, operator, time
 from playsound import playsound
 
+
 ops = {
     "+": operator.add,
     "-": operator.sub,
@@ -8,9 +9,7 @@ ops = {
     "/": operator.truediv
 }
 
-roll = 0
-
-
+# This Func just gets all the different values from the input, it's a mess, so please don't look at it.
 def remove():
     global roll_num, op, sides, op_num
     no_d = dice.split("d", 1)
@@ -21,7 +20,7 @@ def remove():
         if num_op_num[i] == "+" or num_op_num[i] == "-" or num_op_num[i] == "/" or num_op_num[i] == "*":
             op = num_op_num[i]
 
-    # Why is splitting strings so annoying, I am so bad at programming
+    # help
     num_0 = num_op_num.replace("+", "!")
     num_1 = num_0.replace("-", "!")
     num_2 = num_1.replace("*", "!")
@@ -42,19 +41,23 @@ print("--------------------------------------------------------------")
 print("by Connor Mackay\n\n\n")
 time.sleep(1)
 
+# Main Loop
 while True:
     roll_num = 0
     sides = 0
     op = ""
     op_num = 0
     roll = 0
+    total_roll = 0
     
+    # Imput
     print("What dice you want to roll? (eg. 2d20+3)")
     dice = str(input(": "))
     print("")
+    
     remove()
-
-    total_roll = 0
+    
+    # This Calculates the dice roll and prints it in the console, if it's a nat 20 or nat 1 then it will be printed.
     for i in range(0,roll_num):
         ran_roll = int(random.randint(1,sides))
         roll = ran_roll + roll
