@@ -6,4 +6,4 @@
 <p>Accepted operators are <code>+, -, *, /</code></p>
 <br><br>
 
-<p>This Program was made for the DressCode Summer 2022 Competition.</p>
+<p>This program was made for the DressCode Summer 2022 Competition.</p>
