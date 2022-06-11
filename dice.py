@@ -33,15 +33,16 @@ def remove():
 
 
 # ASCII art from https://onlineasciitools.com
-print("--------------------------------------------------------------")
+print("-------------------------------------------------------------------------------")
 print("DDDDD   IIIII  CCCCC  EEEEEEE  RRRRRR   OOOOO  LL      LL      EEEEEEE RRRRRR")
 print("DD  DD   III  CC    C EE       RR   RR OO   OO LL      LL      EE      RR   RR")
 print("DD   DD  III  CC      EEEEE    RRRRRR  OO   OO LL      LL      EEEEE   RRRRRR")
 print("DD   DD  III  CC    C EE       RR  RR  OO   OO LL      LL      EE      RR  RR")
 print("DDDDDD  IIIII  CCCCC  EEEEEEE  RR   RR  OOOO0  LLLLLLL LLLLLLL EEEEEEE RR   RR")
-print("--------------------------------------------------------------")
+print("-------------------------------------------------------------------------------")
+time.sleep(0.3)
 print("by Connor Mackay\n\n\n")
-time.sleep(1)
+time.sleep(0.7)
 
 # Main Loop
 while True:
@@ -74,8 +75,7 @@ while True:
             print("Roll %s: %s" %((i + 1), ran_roll))
     op_func = ops[op]
     total_roll = op_func(int(roll), int(op_num))
-
-    print("\n--------------------------------------------------------------")
+    print("-------------------------------------------------------------------------------")
     print("You Rolled:")
     print(total_roll)
-    print("--------------------------------------------------------------\n")
+    print("-------------------------------------------------------------------------------")
